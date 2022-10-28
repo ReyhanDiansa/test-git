@@ -8,6 +8,19 @@
   </head>
   <body>
     <h1>Reyhan lol</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi cumque molestias quam facere, voluptatibus, id culpa similique alias libero odit dolorum ea ab doloribus?</p>
+    <form action="">
+      <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle" value="Boat">
+      <label for="vehicle3"> I have a boat</label><br>
+  </form>
+  <script>
+      const checkbox = document.getElementsByTagName("vehicle");
+      checkbox.addEventListener("change", () => {
+        console.log(checkbox.value);
+      })
+  </script>
   </body>
 </html>
